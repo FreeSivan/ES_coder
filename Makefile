@@ -1,12 +1,12 @@
 CC=g++
 OBJ=galois8bit.o coder.o matrix.o
 
-rscoder : ${OBJ}
+escoder : ${OBJ}
 	${CC} $^ -o $@
 
 ${OBJ} : %.o : %.cpp
 	${CC} -c $< -o $@
 
 clean:
-	@rm -f *.o rscoder
+	@rm -f *.o escoder
 
